@@ -91,5 +91,8 @@ Time taken by pytorch indexing: 0.009310 seconds
 Time taken by index_select cuda: 0.057033 seconds
 Time taken by custom indexing cuda: 0.014972 seconds
 Time taken by pytorch cuda: 0.000663 seconds
+
+This means that in a BeamSearch context when reducing the large batch x beam tensor to selected indices, it is quicker to perform on CUDA
+
 """
 
